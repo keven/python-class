@@ -28,7 +28,7 @@ def hello_monkey():
     }
     from_number = request.values.get('From', None)
 
-    message = callers[from_number] if from_number in callers else ""
+    message = callers[from_number] if from_number in callers else "you"
 
     body_message = request.values.get('Body', None)
     if body_message and "joke" in body_message.lower():
